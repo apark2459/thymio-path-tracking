@@ -247,7 +247,6 @@ if __name__ == '__main__':
 
         marker_point = create_marker(current_ref_pose[0],current_ref_pose[1]) # Create Marker for visualizing reference trajectory
 
-        #rospy.loginfo(f"\nReference pose:\n{reference_msg}")
         ref_pub.publish(reference_msg) # Publish reference pose message
         vis_pub.publish(marker_point) # Publish Marker object for visualization
 
