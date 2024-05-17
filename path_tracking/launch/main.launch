@@ -1,0 +1,16 @@
+<launch>
+    <!-- Node for reference.py -->
+    <node name="reference" pkg="path_tracking" type="reference.py" output="log">
+        <!-- Parameter values -->
+        <param name="waypoints" value="[[0,0],[0.9510,0.6190],[-0.1820,0.5600],[-0.4760,1.6550],[-0.7700,0.5600],[-1.9030,0.6190],[-0.9520,0],[-1.3580,-1.0590],[-0.4760,-0.3450],[0.4060,-1.0590]]" />
+        <param name="velocity" value="0.1" />
+    </node>
+
+    <!-- Node for controller.py -->
+    <node name="controller" pkg="path_tracking" type="controller.py" output="screen">
+        <!-- Parameter values -->
+        <param name="ks" value="1" />
+        <param name="kn" value="20" />
+        <param name="kth" value="5" />
+    </node>
+</launch>
