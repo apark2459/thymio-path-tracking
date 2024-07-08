@@ -19,9 +19,9 @@ To run the ROS package, follow these steps: <br>
 (3) To establish a connection between the Thymio and the PC, turn on the Thymio and insert the wireless USB dongle to the PC. <br>
 (4) Run the following commands to connect Thymio to the PC: <br>
 
-cd ~/<workspace> <br>
-source ~/<workspace>/install/setup.bash <br>
-source ~/<workspace>/devel/setup.bash <br>
+cd ~/\<workspace\> <br>
+source ~/\<workspace\>/install/setup.bash <br>
+source ~/\<workspace\>/devel/setup.bash <br>
 export DEVICE="ser:device=/dev/ttyACM0" <br>
 export SIMULATION=False <br>
 sudo chmod 666 /dev/ttyACM0 <br>
@@ -35,7 +35,7 @@ roslaunch mocap\_optitrack mocap.launch <br>
 
 (6) Finally, run the following commands to launch the path tracking package: <br>
 
-cd ~/<workspace> <br>
-source ~/<workspace>/install/setup.bash <br>
-source ~/<workspace>/devel/setup.bash <br>
+cd ~/\<workspace\> <br>
+source ~/\<workspace\>/install/setup.bash <br>
+source ~/\<workspace\>/devel/setup.bash <br>
 roslaunch path_tracking main.launch <br>
