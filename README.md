@@ -1,5 +1,5 @@
 # thymio-path-tracking
-ROS package for path-tracking on the Thymio II robot (wireless version). It contains two nodes: (1) reference.py and (2) controller.py. Version of Ubuntu and ROS distribution used were Ubuntu 20.04 and ROS Melodic. OptiTrack motion capture system was used for localization.
+ROS package for path-tracking on the Thymio II robot (wireless version). It contains two nodes: (1) reference.py and (2) controller.py. Version of Ubuntu and ROS distribution used were Ubuntu 20.04 and ROS Noetic. OptiTrack motion capture system was used for localization.
 
 ## Contents of the package
 
@@ -14,7 +14,7 @@ A launch file, main.launch, has been written to run the two nodes at once. You c
 
 ## Procedure for running the package
 To run the ROS package, follow these steps: <br>
-(1) Create a workspace, copy this package into this workspace, and build the workspace. <br>
+(1) Create a new workspace and copy this package into the src folder. This src folder should also contain ros-aseba and ros-thymio packages downloaded from https://jeguzzi.github.io/ros-aseba/installation.html. <br>
 (2) Run roscore. <br>
 (3) To establish a connection between the Thymio and the PC, turn on the Thymio and insert the wireless USB dongle to the PC. <br>
 (4) Run the following commands to connect Thymio to the PC: <br>
